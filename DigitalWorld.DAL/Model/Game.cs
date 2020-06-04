@@ -11,5 +11,7 @@ namespace DigitalWorld.DAL.Model
         public string Localization { get; set; }
         public int AgeLimit { get; set; }
         public string DevCompany { get; set; }
+        public int CategoryId { get; set; }
+        public Category Category { get; set; }
     }
 }

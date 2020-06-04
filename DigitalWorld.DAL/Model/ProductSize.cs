@@ -11,5 +11,8 @@ namespace DigitalWorld.DAL.Model
         public string Dimension { get; set; }
         public int Weight { get; set; }
         public ColourType ColourType { get; set; }
+
+        public ICollection<PlayStation> PlayStations { get; set; }
+        public ICollection<GamePad> GamePads { get; set; }
     }
 }

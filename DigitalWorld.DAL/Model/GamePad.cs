@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DigitalWorld.DAL.Model
 {
-    public class GamePad: BaseEntity
+    public class GamePad : BaseEntity
     {
         public string Type { get; set; }
         public int ButtonsCount { get; set; }
@@ -12,6 +12,7 @@ namespace DigitalWorld.DAL.Model
         public string Battery { get; set; }
         public int ProductSizeId { get; set; }
         public ProductSize ProductSize { get; set; }
-
+        public int CategoryId { get; set; }
+        public Category Category { get; set; }
     }
 }

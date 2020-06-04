@@ -19,8 +19,9 @@ namespace DigitalWorld.DAL.Model
         public string RAMType { get; set; }
         public int InternalMemoryVolume { get; set; }
         public string Сomplectation { get; set; }
-        public IEnumerable<string> VideoLinks { get; set; }
 
+        public int CategoryId { get; set; }
+        public Category Category { get; set; }
         public int ProductSizeId { get; set; }
         public ProductSize ProductSize { get; set; }
     }

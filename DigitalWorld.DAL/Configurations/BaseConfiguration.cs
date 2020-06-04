@@ -12,17 +12,14 @@ namespace DigitalWorld.DAL.Configurations
     public class BaseConfiguration<TEntityType> : IEntityTypeConfiguration<TEntityType>
         where TEntityType : BaseEntity
     {
-        private string _tableName;
+        private readonly string _tableName;
         public BaseConfiguration(string tableName)
         {
             _tableName = tableName;
         }
 
-        public void Configure(EntityTypeBuilder<BaseEntity> builder)
-        {
-        }
 
-        public void Configure(EntityTypeBuilder<TEntityType> builder)
+        public virtual void Configure(EntityTypeBuilder<TEntityType> builder)
         {
             builder.ToTable(_tableName, "dbo");
             builder.Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
