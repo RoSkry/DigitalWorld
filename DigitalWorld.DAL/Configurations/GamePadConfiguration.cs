@@ -20,7 +20,7 @@ namespace DigitalWorld.DAL.Configurations
             builder.Property(p => p.ButtonsCount).IsRequired();
             builder.Property(p => p.Сompatibility).IsRequired().HasMaxLength(255);
             builder.Property(p => p.Battery).IsRequired().HasMaxLength(255);
-
+            builder.Property(p => p.Name).IsRequired().HasMaxLength(255);
             builder.HasOne(e => e.Category).WithMany(e => e.GamePads);
             builder.HasOne(e => e.ProductSize).WithMany(e => e.GamePads);
         }

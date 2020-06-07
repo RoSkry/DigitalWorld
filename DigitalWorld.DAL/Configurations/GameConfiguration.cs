@@ -15,6 +15,7 @@ namespace DigitalWorld.DAL.Configurations
         public override void Configure(EntityTypeBuilder<Game> builder)
         {
             base.Configure(builder);
+            builder.Property(p => p.Name).IsRequired().HasMaxLength(255);
             builder.Property(p => p.Localization).IsRequired().HasMaxLength(255);
             builder.Property(p => p.AgeLimit).IsRequired();
             builder.Property(p => p.DevCompany).IsRequired().HasMaxLength(255);

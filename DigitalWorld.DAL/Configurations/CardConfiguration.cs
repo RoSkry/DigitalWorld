@@ -14,6 +14,7 @@ namespace DigitalWorld.DAL.Configurations
         public override void Configure(EntityTypeBuilder<Card> builder)
         {
             base.Configure(builder);
+            builder.Property(p => p.Name).IsRequired().HasMaxLength(255);
             builder.Property(p => p.Type).IsRequired().HasMaxLength(255);
             builder.Property(p => p.Information).IsRequired().HasMaxLength(255);
 

@@ -31,7 +31,7 @@ namespace DigitalWorld.DAL.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(nullable: true)
+                    Name = table.Column<string>(maxLength: 255, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -45,7 +45,7 @@ namespace DigitalWorld.DAL.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(nullable: true),
+                    Name = table.Column<string>(maxLength: 255, nullable: false),
                     Type = table.Column<string>(maxLength: 255, nullable: false),
                     Information = table.Column<string>(maxLength: 255, nullable: false),
                     CategoryId = table.Column<int>(nullable: false)
@@ -69,7 +69,7 @@ namespace DigitalWorld.DAL.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(nullable: true),
+                    Name = table.Column<string>(maxLength: 255, nullable: false),
                     GenreType = table.Column<int>(nullable: false),
                     Localization = table.Column<string>(maxLength: 255, nullable: false),
                     AgeLimit = table.Column<int>(nullable: false),
@@ -95,7 +95,7 @@ namespace DigitalWorld.DAL.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(nullable: true),
+                    Name = table.Column<string>(maxLength: 255, nullable: false),
                     Type = table.Column<string>(maxLength: 255, nullable: false),
                     ButtonsCount = table.Column<int>(nullable: false),
                     Сompatibility = table.Column<string>(maxLength: 255, nullable: false),
@@ -128,7 +128,7 @@ namespace DigitalWorld.DAL.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(nullable: true),
+                    Name = table.Column<string>(maxLength: 255, nullable: false),
                     Type = table.Column<string>(maxLength: 255, nullable: false),
                     HardDiskType = table.Column<int>(nullable: false),
                     CPU = table.Column<string>(maxLength: 255, nullable: false),
