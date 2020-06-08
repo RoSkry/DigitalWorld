@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigitalWorld.Web", "DigitalWorld.Web\DigitalWorld.Web.csproj", "{497666DE-3DCE-49D1-8483-673E69701602}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalWorld.DAL", "DigitalWorld.DAL\DigitalWorld.DAL.csproj", "{F01093D5-FB17-46EA-A7FF-6DB69B8316EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigitalWorld.DAL", "DigitalWorld.DAL\DigitalWorld.DAL.csproj", "{F01093D5-FB17-46EA-A7FF-6DB69B8316EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalWorld.Common", "DigitalWorld.Common\DigitalWorld.Common.csproj", "{B94FD99B-329C-44DA-902D-309818F0CD39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F01093D5-FB17-46EA-A7FF-6DB69B8316EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F01093D5-FB17-46EA-A7FF-6DB69B8316EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F01093D5-FB17-46EA-A7FF-6DB69B8316EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B94FD99B-329C-44DA-902D-309818F0CD39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B94FD99B-329C-44DA-902D-309818F0CD39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B94FD99B-329C-44DA-902D-309818F0CD39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B94FD99B-329C-44DA-902D-309818F0CD39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

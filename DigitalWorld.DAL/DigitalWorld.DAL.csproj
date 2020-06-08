@@ -16,4 +16,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DigitalWorld.Common\DigitalWorld.Common.csproj" />
+  </ItemGroup>
+
 </Project>
